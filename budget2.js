@@ -39,7 +39,7 @@ Array.from (editButtons).forEach(element => {
 const modifyElement = (element, edit = flase) => {
 let parentDiv = element.parentElement;
 let currentBalance = balance.Value.innerText;
-let currentExpense = expenditureValue.innerText:
+let currentExpense = expenditureValue.innerText;
 let parentAmount = parentDiv.qureySelector(".amount").innerText;
 if(edit){
 let parentText = parentDiv.qureySelector(".product").innerText;
@@ -83,9 +83,8 @@ sublistContent.appendChild(deleteButton);
 document.getElementById("list").appendChild (sublistContent);
 };
 
-//expense  function
 
-checkAmountButton.addEventListener ("click" () => {
+checkAmountButton.addEventListener ("click", () => {
 if (!userAmount.value || !productTitle.value) {
     productTitileError.classList.remove("hide");
     return false;    
